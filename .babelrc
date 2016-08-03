@@ -1,0 +1,8 @@
+{
+  presets: [  "es2015-loose", "stage-0", "react" , "react-optimize"],
+  plugins: [  "react-hot-loader/babel",
+				"transform-decorators-legacy",
+				"transform-react-constant-elements",
+				"transform-runtime",
+				"add-module-exports"]
+}
