@@ -1,0 +1,11 @@
+:global {
+    .globalDefault {
+        background: white;
+    }
+    .globalRed {
+        background: red;
+    }
+    .globalGreen {
+        background: green;
+    }
+}

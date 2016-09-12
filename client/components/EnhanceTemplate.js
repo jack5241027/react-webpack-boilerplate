@@ -1,16 +1,17 @@
-import { Component } from 'react'
+import React, { Component } from 'react'
 
-//Return 繼承 React.Component 的 Class Component
+// Return 繼承 React.Component 的 Class Component
 export var Enhance = ComposedComponent => class extends Component {
-	constructor(props) {
-	  	super(props);
-	  	this.state = { data: null };
-	}
+    constructor(props) {
+        super(props)
+        this.state = { wording: null }
+    }
 
     componentDidMount() {
-        this.setState({ data: 'This is Enhance Component. Like Mixin' });
+        this.setState({ wording: 'This is Enhance Component. Like Mixin' })
     }
     render() {
-        return <ComposedComponent {...this.props} data={this.state.data} />;
+        let {wording} = this.state
+        return <ComposedComponent {...this.props} wording={wording} />
     }
-};
+}
