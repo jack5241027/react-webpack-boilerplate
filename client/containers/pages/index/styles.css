@@ -1,0 +1,111 @@
+.page {
+    padding-top: 55px;
+}
+
+.footer {
+    overflow: hidden;
+}
+
+.endorsebar {
+    display: inline-block;
+    .endorse {
+        margin: 0 10px;
+        display: inline-block;
+        width: 40px;
+        height: 40px;
+    }
+    .endorseA {
+        margin: 0 10px;
+        display: inline-block;
+        width: 40px;
+        height: 40px;
+        background: url('http://fakeimg.pl/50x50/?text=A')
+    }
+    .endorseB {
+        margin: 0 10px;
+        display: inline-block;
+        width: 40px;
+        height: 40px;
+        background: url('http://fakeimg.pl/50x50/?text=B')
+    }
+    .endorseC {
+        margin: 0 10px;
+        display: inline-block;
+        width: 40px;
+        height: 40px;
+        background: url('http://fakeimg.pl/50x50/?text=C')
+    }
+}
+
+.btn_endorsebar {
+    position: absolute;
+    display: inline-block;
+    padding: 2px 8px;
+    cursor: pointer;
+}
+
+.companyswrap {
+    min-width: 320px;
+    margin: 0 auto;
+    padding: 0 15px;
+}
+
+.comblock {
+    width: 80%;
+    margin: 10px auto;
+    position: relative;
+}
+
+.com {
+    margin: 10px auto;
+    padding: 15px 10px;
+    width: 220px;
+    border-radius: 6px;
+    border: 1px solid;
+    background: $c-background;
+    overflow: hidden;
+    img {
+      display: block;
+      margin: 0 auto;
+    }
+    &_body {
+      margin: 0 auto;
+    }
+    &_desc {
+      word-wrap: break-word;
+    }
+}
+
+[data-role="header-role"] {
+     width: 50%;
+}
+
+@media screen and (min-width: 480px) {
+    .companyswrap {
+      width: 480px;
+    }
+    .comblock {
+      display: inline-block;
+      vertical-align: top;
+      margin: 0 auto;
+      width: 50%;
+    }
+}
+
+@media screen and (min-width: 720px) {
+    .companyswrap {
+      width: 720px;
+    }
+    .comblock {
+      width: 33%;
+    }
+}
+
+@media screen and (min-width: 960px) {
+    .companyswrap {
+      width: 960px;
+    }
+    .comblock {
+        width: 25%;
+    }
+}

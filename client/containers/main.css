@@ -1,0 +1,73 @@
+@import '../stylesconfig/reset';
+/* *************************************
+//
+//   Base
+//   -> Tag-level settings
+//
+// ************************************* */
+
+* {
+    padding: 0;
+    margin: 0;
+}
+
+html {
+    background: $c-background;
+    font-family: $b-fontFamily;
+    font-family: Arial,'微軟正黑體','Microsoft JhengHei',Arial,Verdana,Arial,Helvetica,sans-serif,'STHeiti Light','儷黑 Pro','LiHei Pro','Microsoft Yahei','Microsoft JhengHei','新細明體' !important;
+    line-height: $b-lineHeight;
+    height: 100%;
+    box-sizing: border-box;
+}
+
+body, :global(#root) {
+    height: 100%;
+    font-size: 100%;
+}
+
+*, *::before, *::after {
+    box-sizing: inherit;
+}
+
+/* -------------------------------------
+//   Block Content
+// ------------------------------------- */
+
+/* ul, p {
+//   margin-bottom: $b-space;
+//   margin-top: 0;
+// }
+
+// li {
+//   margin-bottom: $b-space-s;
+//   margin-top: 0;
+// } */
+
+/* ----- Headers ----- */
+
+h1, .h1,
+h2, .h2,
+h3, .h3,
+h4, .h4 {
+  font-family: $b-fontFamily-heading;
+  font-weight: bold;
+  line-height: 1.2;
+  word-spacing: 0.1em;
+  margin-bottom: $b-space-xs;
+  margin-top: 0;
+}
+
+p,span,div,dl,dd,dt {
+    word-spacing: 0.1em;
+}
+
+/* -------------------------------------
+//   Inline Content
+// ------------------------------------- */
+
+a {
+  color: $c-highlight;
+  text-decoration: none;
+  &:hover,
+  &:focus {}
+}

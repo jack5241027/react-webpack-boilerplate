@@ -1,6 +1,16 @@
 import styles from './styles.css'
 import React from 'react'
 
+class SearchBar extends React.Component {
+    render() {
+        return (
+          <div className={styles.searchBar}>
+            <input className="" placeholder="Search" />
+          </div>
+        )
+    }
+}
+
 class Header extends React.Component {
     constructor(props, context) {
         super(props, context)
@@ -18,8 +28,8 @@ class Header extends React.Component {
     }
     // Type Define
     static propTypes = {
+        additionalClass: React.PropTypes.string
     }
-
     // GetInitialState (Normal)
     state = {
     }
@@ -59,9 +69,21 @@ class Header extends React.Component {
     }
 
     render() {
+        let {additionalClass} = this.props
         return (
-          <header>
-            <h2 className={styles.title}>React & Redux & Webpack Boilerplate</h2>
+          <header className={styles.header} data-role={additionalClass}>
+            <div className={styles.header_container}>
+              <div className={styles.header_rightContent}>
+                <div className={styles.userprofilelink}>
+                  <img className={styles.userprofilelink_icon} src="https://s-passets-cache-ak0.pinimg.com/images/user/default_30.png" alt="JackChan" />
+                  <span className={styles.userprofilelink_name}>JackChan
+                  </span>
+                </div>
+              </div>
+              <div className={styles.header_leftContent}>
+                <SearchBar />
+              </div>
+            </div>
           </header>
         )
     }
