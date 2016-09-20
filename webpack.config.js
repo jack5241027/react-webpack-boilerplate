@@ -83,9 +83,16 @@ module.exports = {
     },
     postcss: [
         postcssNested,
-        require('postcss-font-magician'),
-        require('postcss-simple-vars'),
         require('postcss-nested'),
+        require('postcss-import'),
+        require('postcss-simple-vars')({
+            variables: function() {
+                var color = require('./client/stylesconfig/color.js')
+                var baseVar = require('./client/stylesconfig/variables.js')
+                return {...color, ...baseVar}
+            }
+        }),
+        require('postcss-font-magician'),
         autoprefixer({ browsers: ['last 2 versions'] })
     ],
     resolve: {

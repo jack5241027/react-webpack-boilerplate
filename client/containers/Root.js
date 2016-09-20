@@ -2,10 +2,7 @@ import React, { Component, PropTypes } from 'react'
 import { connect, Provider } from 'react-redux'
 import DevTools from './DevTools'
 import { Router } from 'react-router'
-// import { Enhance } from '../components/EnhanceTemplate'
-// import { ThemeTest } from '../components/ThemeTemplate'
-// import themeA from './themeA.css'
-// import themeB from './themeB.css'
+import './main.css'
 
 class Root extends Component {
     constructor(props, context) {
@@ -76,7 +73,7 @@ class Root extends Component {
               <Router history={history}>
                 {routes}
               </Router>
-              { this.devTools }
+              { /* this.devTools */ }
             </div>
           </Provider>
         )

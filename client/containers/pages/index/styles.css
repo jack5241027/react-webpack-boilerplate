@@ -1,0 +1,51 @@
+.page {
+    padding-top: 55px;
+}
+
+.footer {
+    overflow: hidden;
+}
+
+.endorsebar {
+    display: inline-block;
+    .endorseA {
+        margin: 0 10px;
+        display: inline-block;
+        width: 50px;
+        height: 50px;
+        background: url('http://fakeimg.pl/50x50/?text=A')
+    }
+    .endorseB {
+        margin: 0 10px;
+        display: inline-block;
+        width: 50px;
+        height: 50px;
+        background: url('http://fakeimg.pl/50x50/?text=B')
+    }
+    .endorseC {
+        margin: 0 10px;
+        display: inline-block;
+        width: 50px;
+        height: 50px;
+        background: url('http://fakeimg.pl/50x50/?text=C')
+    }
+}
+
+.companysblock {
+    max-width: 960px;
+    margin: 0 auto;
+}
+
+.companysblock_com {
+    display: inline-block;
+    width: 200px;
+    vertical-align : top;
+    margin: 14px 20px 0;
+    border-radius: 6px;
+    position: relative;
+    background: $c-background;
+}
+
+[data-role="header-role"] {
+     width: 50%;
+}
